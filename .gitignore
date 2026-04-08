@@ -1,0 +1,36 @@
+# Archives & exports
+*.tar.gz
+*.zip
+
+# Raw data exports (may contain PII)
+*.csv
+*.xlsx
+*.xls
+
+# Logs (may contain IPs, usernames)
+*.log
+
+# Environment & secrets
+.env
+.env.*
+*.key
+*.pem
+*.crt
+
+# Synology system
+@eaDir/
+#recycle/
+Thumbs.db
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+venv/
