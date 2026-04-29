@@ -29,7 +29,7 @@
 
 | Hostname | Tags | Tailscale IP |
 |---|---|---|
-| celnas | tag:admin, tag:nas | 100.x.x.x |
+| nas | tag:admin, tag:nas | 100.x.x.x |
 | desktop-user-a | tag:admin | 100.x.x.x |
 | phone-user-a | tag:member | 100.x.x.x |
 | laptop-user-b | tag:member | 100.x.x.x |
@@ -109,7 +109,7 @@ Admin machines can talk to each other on all ports.
 
 ## HTTPS Certificate
 
-- Issued via `tailscale cert celnas.<tailnet-dns>.ts.net` (Let's Encrypt, auto-provisioned by Tailscale for `*.ts.net` domains)
+- Issued via `tailscale cert nas.<tailnet-dns>.ts.net` (Let's Encrypt, auto-provisioned by Tailscale for `*.ts.net` domains)
 - Imported into DSM → Control Panel → Security → Certificate
 - Renewal: 90 days
 - HTTPS Certificates: **enabled** in Tailscale admin console

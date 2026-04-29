@@ -17,7 +17,7 @@ Local access also Tailscale recommended.
 
 ### Network
 
-- **Hostname DNS:** `celnas.<tailnet-dns>.ts.net`
+- **Hostname DNS:** `nas.<tailnet-dns>.ts.net`
 - **Tailnet:** `<org>.github`
 - **Firewall:** LAN + Tailscale only. Everything else denied.
 
@@ -158,12 +158,12 @@ Deny on ANY group overrides Allow from another group.
 
 ## SMB access
 
-- Always connect via `\\celnas.<tailnet-dns>.ts.net`
+- Always connect via `\\nas.<tailnet-dns>.ts.net`
 - "Hide shared folders from users without permission" is enabled on DSM
 - To disconnect a sticky SMB connection, try:
 
 ```
-cmdkey /delete:celnas.<tailnet-dns>.ts.net
+cmdkey /delete:nas.<tailnet-dns>.ts.net
 ```
 
 Verify with:

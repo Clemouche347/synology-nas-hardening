@@ -114,7 +114,7 @@ No parent inheritance.
 | Method | Groups |
 |---|---|
 | File Station (DSM web) | `administrators` only |
-| SMB | All groups except `org_guest`. Use `\\celnas.<tailnet-dns>.ts.net` |
+| SMB | All groups except `org_guest`. Use `\\nas.<tailnet-dns>.ts.net` |
 | Synology Drive Client | All groups except `org_guest`. Versioning + file locking optional. |
 | Synology Drive Mobile | All groups. Requires Tailscale when off-LAN. |
 

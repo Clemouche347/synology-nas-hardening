@@ -6,7 +6,7 @@
 
 Your account has been created on the Synology NAS, the company file server at the HCMC office.
 
-**NAS address:** `celnas.<tailnet-dns>.ts.net`
+**NAS address:** `nas.<tailnet-dns>.ts.net`
 
 To access the NAS from outside the office, you need Tailscale (a VPN).
 
@@ -30,7 +30,7 @@ To access the NAS from outside the office, you need Tailscale (a VPN).
 
 ## Step 2 — First login
 
-5. Open your browser and go to: `https://celnas.<tailnet-dns>.ts.net`
+5. Open your browser and go to: `https://nas.<tailnet-dns>.ts.net`
 6. Enter your username and temporary password
 7. You may be asked to change your password. If so, choose a strong password:
    - Minimum 12 characters
@@ -53,7 +53,7 @@ To access the NAS from outside the office, you need Tailscale (a VPN).
 
 **Cannot reach the NAS**
 - Check that Tailscale is connected (icon in system tray should be active)
-- Use the hostname `celnas.<tailnet-dns>.ts.net`, not an IP address
+- Use the hostname `nas.<tailnet-dns>.ts.net`, not an IP address
 
 **2FA code not accepted**
 - Make sure your phone clock is set to automatic (Settings > Date & Time)
