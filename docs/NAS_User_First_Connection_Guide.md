@@ -1,12 +1,12 @@
-# CELNAS — First Connection Guide
+# Synology NAS — First Connection Guide
 
 ---
 
 ## Overview
 
-Your account has been created on CELNAS, the company file server at the HCMC office.
+Your account has been created on the Synology NAS, the company file server at the HCMC office.
 
-**CELNAS address:** `celnas.<tailnet-dns>.ts.net`
+**NAS address:** `celnas.<tailnet-dns>.ts.net`
 
 To access the NAS from outside the office, you need Tailscale (a VPN).
 

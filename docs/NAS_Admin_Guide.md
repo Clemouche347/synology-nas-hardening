@@ -1,4 +1,4 @@
-# CELNAS — Admin Guide
+# Synology NAS — Admin Guide
 
 **Device Onboarding, User Management & Permissions**
 
@@ -8,9 +8,9 @@
 
 ## Architecture overview
 
-CELNAS is a Synology DS925+ (2×12TB RAID1, Btrfs, 20GB ECC RAM, DSM 7.3.2) at the HCMC office.
+The NAS is a Synology DS925+ (2×12TB RAID1, Btrfs, 20GB ECC RAM, DSM 7.3.2) at the HCMC office.
 
-DSM = DiskStation Manager is Synology's web-based operating system / console that runs on CELNAS.
+DSM = DiskStation Manager is Synology's web-based operating system / console that runs on the NAS.
 
 Remote access goes through Tailscale.
 Local access also Tailscale recommended.
@@ -40,7 +40,7 @@ Devices without a tag are completely isolated. Always assign tags.
 
 ## Adding a new device to the tailnet
 
-This is the procedure to onboard a team member's desktop device so they can access CELNAS.
+This is the procedure to onboard a team member's desktop device so they can access the NAS.
 
 For office users also, connecting via Tailscale hostname is the recommended approach. Tailscale establishes a direct WireGuard tunnel over LAN (no DERP relay), and you get encrypted + identity-verified + ACL-enforced access. No reason to bypass it by using raw local IP — that would actually be less secure with zero speed gain worth mentioning.
 
@@ -89,7 +89,7 @@ Remove-Item Env:TS_AUTH_KEY
 
 ---
 
-## CELNAS user management
+## NAS user management
 
 ### User accounts
 
@@ -133,7 +133,7 @@ Deny on ANY group overrides Allow from another group.
 
 - Subfolder created entails inherited permissions by default. Can be configured in Properties.
 - Read permission on a folder means you can open it (= navigate into it) and see its contents.
-- To set permissions only use DSM (CELNAS web console), or SSH for advanced admin user.
+- To set permissions only use DSM (the NAS web console), or SSH for advanced admin user.
 - Avoid permission complexity. For example a shared folder with permissions, and subfolders with different permissions.
 - Avoid permission per user, instead create a group, give permission to group, add user to group.
 - Avoid changing permissions too frequently.

@@ -1,4 +1,4 @@
-# CELNAS — Self-Hosted Infrastructure for a Consulting Firm
+# Synology NAS — Self-Hosted Infrastructure for a Consulting Firm
 
 On-premise NAS infrastructure project for a supply chain analytics firm (~25 users) across two entities, deployed and managed **remotely from France to Ho Chi Minh City, Vietnam**.
 
@@ -35,7 +35,7 @@ Designed, deployed, and documented a Synology NAS as the central file server and
           └────────────┬─────────────┘
                        │
 ┌──────────────────────▼──────────────────────────────────┐
-│  CELNAS — Synology DS925+                               │
+│  Synology NAS — DS925+                                  │
 │  2×12TB RAID1 Btrfs · 20GB ECC RAM · DSM 7.3.2         │
 │                                                         │
 │  ┌─────────┐ ┌───────────────┐ ┌──────────────┐        │
@@ -112,12 +112,12 @@ Designed, deployed, and documented a Synology NAS as the central file server and
 
 | Document | Audience | Covers |
 |---|---|---|
-| [Admin Guide](docs/CELNAS_Admin_Guide.md) | IT admin | Device onboarding, user management, permissions, snapshots, maintenance |
-| [First Connection Guide](docs/CELNAS_User_First_Connection_Guide.md) | End users | Tailscale install, first login, 2FA setup, troubleshooting |
-| [Auth Key Guide](docs/CELNAS_Auth_Key_Guide.md) | Tailnet owner | Key generation, device registration, security practices |
-| [Tailnet Reference](docs/CELNAS_Tailnet_Reference.md) | IT admin | ACL policy, machines, users, tags, scheduled tasks, cert |
-| [Implementation Report](docs/CELNAS_Implementation_Report.md) | Stakeholders | Phase-by-phase build log with status and decisions |
-| [SANDBOX ACL Verification](docs/CELNAS_SANDBOX_ACL_Verification.md) | IT admin | ACL audit log for all 27 user subfolders |
+| [Admin Guide](docs/NAS_Admin_Guide.md) | IT admin | Device onboarding, user management, permissions, snapshots, maintenance |
+| [First Connection Guide](docs/NAS_User_First_Connection_Guide.md) | End users | Tailscale install, first login, 2FA setup, troubleshooting |
+| [Auth Key Guide](docs/NAS_Auth_Key_Guide.md) | Tailnet owner | Key generation, device registration, security practices |
+| [Tailnet Reference](docs/NAS_Tailnet_Reference.md) | IT admin | ACL policy, machines, users, tags, scheduled tasks, cert |
+| [Implementation Report](docs/NAS_Implementation_Report.md) | Stakeholders | Phase-by-phase build log with status and decisions |
+| [SANDBOX ACL Verification](docs/NAS_SANDBOX_ACL_Verification.md) | IT admin | ACL audit log for all 27 user subfolders |
 
 ---
 

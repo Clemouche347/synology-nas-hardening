@@ -1,4 +1,4 @@
-# CELNAS — Implementation Report
+# Synology NAS — Implementation Report
 
 Synology DS925+ | HCMC Office
 2×12TB RAID1 Btrfs | 20GB ECC RAM | DSM 7.3.2
@@ -21,7 +21,7 @@ Locked down all remote access. Tailscale replaced QuickConnect as the sole remot
 | Default accounts | `admin` + `guest` deactivated. | ✅ Done |
 | Password policy | 12 chars, special chars, no common, 90-day expiry. | ✅ Done |
 | Auto Block | 10 fails / 5 min → IP ban. | ✅ Done |
-| Notifications | Email alerts configured with `[CELNAS]` prefix. | ✅ Done |
+| Notifications | Email alerts configured with `[NAS]` prefix. | ✅ Done |
 | Auto-update | Important DSM app updates only. | ✅ Done |
 | TUN mode | 2 scheduled tasks at boot (kernel module + Tailscale restart). | ✅ Done |
 | Tailscale update | v1.58.2 → v1.96.4 on NAS. | ✅ Done |
@@ -122,13 +122,13 @@ SMB setting: **Hide shared folders from users without permission** — enabled.
 
 ---
 
-CELNAS is only accessible via the tailnet. Devices must be pre-registered before they can connect. The chosen method is **auth key**. One reusable key can be used to register all devices.
+The NAS is only accessible via the tailnet. Devices must be pre-registered before they can connect. The chosen method is **auth key**. One reusable key can be used to register all devices.
 
 ---
 
 ## Open Items
 
-- [ ] Tailscale + CELNAS onboarding — pilot team and full team
+- [ ] Tailscale + NAS onboarding — pilot team and full team
 - [ ] Refine initial shared folder structure per team needs
 - [ ] Docs as code
 - [ ] Hyper Backup to Google Cloud Platform — 3-2-1 backup strategy

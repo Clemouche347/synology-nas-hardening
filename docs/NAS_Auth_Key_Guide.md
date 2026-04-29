@@ -1,7 +1,7 @@
-# CELNAS — Auth Key Guide
+# Synology NAS — Auth Key Guide
 
 **Audience:** Tailnet Owner or Tailnet User with Admin privilege
-**Context:** CELNAS is only accessible through the Tailscale tailnet. Devices must be pre-registered to access CELNAS. The method chosen is **auth key**. This guide covers auth key generation and device registration.
+**Context:** The NAS is only accessible through the Tailscale tailnet. Devices must be pre-registered to access the NAS. The method chosen is **auth key**. This guide covers auth key generation and device registration.
 
 One single reusable key can be used to register all devices.
 
